@@ -80,9 +80,6 @@ export default {
       const tableContent = computed(() =>
          state.items.filter(item => filterList(item, state.search)).map(mapList)
       )
-      // const showSelectedRow = computed(
-      //    state.items.filter(item => item.map(mapList))
-      // )
       const onInput = ({ target: { value } }) => {
          clearTimeout(timeout)
          state.timeout = setTimeout(() => (state.search = value), 500)

@@ -21,15 +21,12 @@
             >
                Close editor!
             </button>
-
-            <div>asdasdasdas</div>
          </div>
       </div>
    </transition>
 </template>
 <script>
 import Table from '@/components/Table.vue'
-// import { computed } from 'vue'
 
 export default {
    components: {
@@ -54,11 +51,7 @@ export default {
             { key: 'status', header: 'Status' }
          ]
       }
-      // const tableConfig = computed(() => ({
-      //    columns: props.config.columns,
-      //    headers: props.config.headers,
-      //    content: props.content
-      // }))
+
       console.log(content)
 
       return { tableConfig, content }
